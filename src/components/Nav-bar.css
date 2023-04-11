@@ -1,0 +1,59 @@
+/* Apply margin and padding reset to all elements */
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Styles for the navbar container */
+  .navbar {
+    /* Use flexbox to horizontally align the items and space them out */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* Add padding */
+    height: 5rem; /* Set the height of the navbar */
+    width: 100%; /* Make the navbar span the entire width of the screen */
+    margin-bottom: 2rem; /* Add a margin below the navbar */
+    border-bottom: 1px solid rgb(204, 204, 204); /* Add a border at the bottom of the navbar */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add a shadow effect */
+  }
+  
+  /* Styles for the logo container */
+  .logo {
+    /* Use flexbox to vertically align the items */
+    display: flex;
+    align-items: center;
+    margin-left: 2rem; /* Add margin to the left of the logo */
+  }
+  
+  /* Styles for the logo title */
+  .logo h1 {
+    font-size: 2rem; /* Set the font size of the logo title */
+  }
+  
+  /* Styles for the logo image */
+  .logo-image {
+    height: 5rem; /* Set the height of the logo image */
+    padding-right: 3rem; /* Add padding to the right of the logo image */
+  }
+  
+  /* Styles for the navigation links container */
+  .nav-links {
+    display: flex; /* Use flexbox to horizontally align the items */
+    align-items: center; /* Vertically align the items */
+    margin-right: 3rem; /* Add margin to the right of the navigation links */
+  }
+  
+  /* Styles for the navigation links */
+  .nav-links li {
+    display: inline; /* Display the links in a single line */
+    list-style-type: none; /* Remove the bullet points */
+    padding: 0.05rem 0; /* Add padding to the links */
+    text-align: center; /* Center the text of the links */
+    margin: 0 1rem; /* Add margin to the left and right of the links */
+    text-decoration: none; /* Remove the underline from the links */
+    font-size: 1.3rem; /* Set the font size of the links */
+    color: rgb(0, 124, 250); /* Set the color of the links */
+  }
+  
