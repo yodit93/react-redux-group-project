@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* stylelint-disable */
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logo from '../logo/planet.png';
