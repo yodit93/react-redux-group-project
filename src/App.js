@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       {/* Navbar component */}
-      <Navbar />
+      <Nav-bar />
 
       {/* Setting up routing using react-router-dom */}
       <Routes>
