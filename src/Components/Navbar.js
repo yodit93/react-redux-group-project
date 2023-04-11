@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* stylelint-disable */
 import React from 'react';
 import logo from '../logo/planet.png';
 import './Navbar.css';

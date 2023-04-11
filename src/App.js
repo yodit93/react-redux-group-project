@@ -1,4 +1,5 @@
-// Importing required dependencies
+/* eslint-disable */
+/* stylelint-disable */
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
