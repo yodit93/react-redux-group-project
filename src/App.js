@@ -1,8 +1,24 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+// pages
+import Rockets from './Pages/Rockets';
+import Missions from './Pages/Missions';
+import Profile from './Pages/Profile';
+import Navbar from './Components/Navbar';
+
+import './App.css';
+
 function App() {
   return (
-    <div className="App">
-      <h1>React redux group project</h1>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </>
   );
 }
 
