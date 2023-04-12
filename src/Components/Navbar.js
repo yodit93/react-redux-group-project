@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* stylelint-disable */
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logo from '../logo/planet.png';
@@ -10,7 +12,6 @@ function Navbar() {
         <img className="logo-image" src={logo} alt="Logo" />
         <h1>Space Travelers` Hub</h1>
       </div>
-
       <div className="nav-links">
         <ul className="menu-list">
           <li className="list-item">

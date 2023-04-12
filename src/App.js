@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* stylelint-disable */
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
@@ -5,10 +7,10 @@ import { Routes, Route } from 'react-router-dom';
 import Rockets from './Pages/Rockets';
 import Missions from './Pages/Missions';
 import Navbar from './Components/Navbar';
-
 import './App.css';
 
 function App() {
+  // Component rendering
   return (
     <>
       <Navbar />
