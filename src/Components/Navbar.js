@@ -12,7 +12,6 @@ function Navbar() {
         <img className="logo-image" src={logo} alt="Logo" />
         <h1>Space Travelers` Hub</h1>
       </div>
-
       <div className="nav-links">
         <ul className="menu-list">
           <li className="list-item">
