@@ -1,6 +1,36 @@
-/* eslint-disable */
-/* stylelint-disable */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.rockets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+  height: auto;
+}
+
+.img {
+  width: 20%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12%;
+  height: 100%;
+}
+
+.reserve {
+  padding: 2% 4%;
+  background-color: blue;
+  color: white;
 }
