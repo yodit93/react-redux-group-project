@@ -21,9 +21,6 @@ function Navbar() {
             <Link to="/missions">Missions</Link>
           </li>
           <li className="list-item">
-            <Link to="/dragons">Dragons</Link>
-          </li>
-          <li className="list-item">
             <Link to="/profile">Profile</Link>
           </li>
         </ul>
