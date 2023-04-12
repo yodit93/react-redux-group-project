@@ -17,8 +17,13 @@ const RocketList = ({ rocket }) => {
         <h3 className="name">{ rocket.name }</h3>
         <p className="description">{ rocket.description }</p>
         <div className="reserve-cont">
-          <button type="button" className="reserve" onClick={() => handleReserve(rocket.id)}>Reserve Rocket</button>
-          <button type="button" className="reserve" onClick={() => handleCancel(rocket.id)}>Cancel Reservation</button>
+          {!rocket.reserved && <button type="button" className="reserve" onClick={() => handleReserve(rocket.id)}>Reserve Rocket</button>}
+          {rocket.reserved && (
+          <>
+            <button type="button" className="reserve" onClick={() => handleCancel(rocket.id)}>Cancel Reservation</button>
+            <button type="button" className="reserve">Reserved</button>
+          </>
+          )}
         </div>
       </div>
     </li>
@@ -30,6 +35,7 @@ RocketList.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
+    reserved: PropTypes.bool.isRequired,
   }).isRequired,
 };
 
