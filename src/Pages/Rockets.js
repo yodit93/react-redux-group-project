@@ -1,9 +1,17 @@
-/* eslint-disable */
-/* stylelint-disable */
-import React from 'react';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchRockets } from '../Redux/Rockets/rocketsSlice';
 
-function Rockets() {
-  return <div>Rockets</div>;
-}
+const Rockets = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, [dispatch]);
+  return (
+    <ul className="rockets">
+      rockets
+    </ul>
+  );
+};
 
 export default Rockets;
