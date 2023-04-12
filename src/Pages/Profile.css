@@ -12,6 +12,27 @@
 }
 
 .mission-lists,
-.rockets-list {
+.my-rockets {
   margin-bottom: 0.5rem;
+}
+
+.rocket-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.rocket-item {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 5rem;
+  border-radius: 0.2rem;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.rocket-name {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
