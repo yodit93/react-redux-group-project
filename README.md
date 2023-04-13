@@ -97,6 +97,10 @@ Finally run the app using the following syntax.
 - Twitter: [@yodtwit](https://twitter.com/yodtwit)
 - LinkedIn: [Yodit Abebe](linkedin.com/in/yodit-abebe-a97a68140)
 
+👤 **Moses-Chibuike**
+
+- GitHub: [@githubhandle](https://github.com/Moses-chibuike)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ezechukwu-chibuike/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
