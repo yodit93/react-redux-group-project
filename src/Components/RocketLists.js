@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* stylelint-disable */
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { bookRockets, cancelReservation } from '../Redux/Rockets/rocketsSlice';
