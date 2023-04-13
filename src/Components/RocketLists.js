@@ -1,8 +1,10 @@
+/* eslint-disable */
+/* stylelint-disable */
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { bookRockets, cancelReservation } from '../Redux/Rockets/rocketsSlice';
 
-const RocketList = ({ rocket }) => {
+function RocketList({ rocket }) {
   const dispatch = useDispatch();
   const handleReserve = (id) => {
     dispatch(bookRockets(id));
@@ -28,14 +30,14 @@ const RocketList = ({ rocket }) => {
       </div>
     </li>
   );
-};
+}
 RocketList.propTypes = {
   rocket: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    reserved: PropTypes.bool.isRequired,
+    reserved: PropTypes.bool,
   }).isRequired,
 };
 

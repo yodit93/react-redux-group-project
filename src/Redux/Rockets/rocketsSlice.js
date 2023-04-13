@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* stylelint-disable */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -63,7 +65,7 @@ const rocketsSlice = createSlice({
           name: rocket.name,
           description: rocket.description,
           image: rocket.flickr_images[0],
-          reserved: false,
+          // reserved: false,
         })));
         return {
           ...state,

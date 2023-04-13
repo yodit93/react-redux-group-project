@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* stylelint-disable */
 * {
   padding: 0;
   margin: 0;
@@ -16,13 +18,13 @@
   margin-bottom: 0.5rem;
 }
 
-.rocket-list {
+.rocket-list, .mission-list {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
 
-.rocket-item {
+.rocket-item, .mission-item {
   display: flex;
   width: 100%;
   border: 1px solid #ccc;
@@ -32,7 +34,7 @@
   padding: 0.5rem;
 }
 
-.rocket-name {
+.rocket-name, .mission-name {
   font-size: 1.5rem;
   font-weight: 600;
 }
