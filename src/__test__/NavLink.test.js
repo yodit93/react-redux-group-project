@@ -2,11 +2,11 @@ import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
-import Navbar from '../Components/Navbar';
+import NavLink from '../Components/NavLink';
 
 const MockNavbar = () => (
   <BrowserRouter>
-    <Navbar />
+    <NavLink />
   </BrowserRouter>
 );
 

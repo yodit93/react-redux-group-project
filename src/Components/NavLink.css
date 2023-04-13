@@ -58,6 +58,10 @@ a:hover {
   color: red;
 }
 
+a:active {
+  color: red;
+}
+
 .link-mission {
   border-right: 2px solid black;
   padding-right: 1rem;

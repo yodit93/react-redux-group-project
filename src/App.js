@@ -3,12 +3,12 @@ import { Routes, Route } from 'react-router-dom';
 import Rockets from './Pages/Rockets';
 import Missions from './Pages/Missions';
 import Profile from './Pages/Profile';
-import Navbar from './Components/Navbar';
+import NavLink from './Components/NavLink';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <NavLink />
       <Routes>
         <Route path="/" element={<Rockets />} />
         <Route path="/missions" element={<Missions />} />

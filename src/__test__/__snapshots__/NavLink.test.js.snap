@@ -54,11 +54,5 @@ exports[`should render the Navbar component 1`] = `
       </li>
     </ul>
   </div>
-  <a
-    aria-current="page"
-    className="active"
-    href="/"
-    onClick={[Function]}
-  />
 </nav>
 `;

@@ -1,45 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Rockets should render the Rockets component 1`] = `
-Array [
-  " ",
-  <ul
-    className="rockets"
+<ul
+  className="rockets"
+>
+  <li
+    className="list"
   >
-    <li
-      className="list"
+    <img
+      alt=""
+      className="img"
+      src="https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png"
+    />
+    <div
+      className="info"
     >
-      <img
-        alt=""
-        className="img"
-        src="https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png"
-      />
-      <div
-        className="info"
+      <h3
+        className="name"
       >
-        <h3
-          className="name"
+        Falcon 1
+      </h3>
+      <p
+        className="description"
+      >
+        The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009
+      </p>
+      <div
+        className="reserve-cont"
+      >
+        <button
+          className="reserve"
+          onClick={[Function]}
+          type="button"
         >
-          Falcon 1
-        </h3>
-        <p
-          className="description"
-        >
-          The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009
-        </p>
-        <div
-          className="reserve-cont"
-        >
-          <button
-            className="reserve"
-            onClick={[Function]}
-            type="button"
-          >
-            Reserve Rocket
-          </button>
-        </div>
+          Reserve Rocket
+        </button>
       </div>
-    </li>
-  </ul>,
-]
+    </div>
+  </li>
+</ul>
 `;

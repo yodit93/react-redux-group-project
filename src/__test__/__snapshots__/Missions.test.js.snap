@@ -1,60 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Missions should render the Missions component 1`] = `
-Array [
-  " ",
-  <table
-    className="missions"
-  >
-    <thead>
-      <tr>
-        <th>
-          Mission
-        </th>
-        <th>
-          Description
-        </th>
-        <th>
-          Status
-        </th>
-        <th>
-          Join
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr
-        className="row"
+<table
+  className="missions"
+>
+  <thead>
+    <tr>
+      <th>
+        Mission
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Status
+      </th>
+      <th>
+        Join
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      className="row"
+    >
+      <td
+        className="miss-name"
       >
-        <td
-          className="miss-name"
+        Falcon 1
+      </td>
+      <td
+        className="miss-descri"
+      >
+        The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009
+      </td>
+      <td>
+        <button
+          className="memb"
+          type="button"
         >
-          Falcon 1
-        </td>
-        <td
-          className="miss-descri"
+          Not a member
+        </button>
+      </td>
+      <td>
+        <button
+          className="btn"
+          onClick={[Function]}
+          type="button"
         >
-          The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009
-        </td>
-        <td>
-          <button
-            className="memb"
-            type="button"
-          >
-            Not a member
-          </button>
-        </td>
-        <td>
-          <button
-            className="btn"
-            onClick={[Function]}
-            type="button"
-          >
-            Join Mission
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>,
-]
+          Join Mission
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;
