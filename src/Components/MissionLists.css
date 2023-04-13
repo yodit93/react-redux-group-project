@@ -1,5 +1,4 @@
-/* eslint-disable */
-/* stylelint-disable */.mission-container {
+.mission-container {
   padding: 0.5rem;
   border: solid 1px #000;
 }

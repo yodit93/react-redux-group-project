@@ -29,9 +29,9 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 - Programming languages: 
-    JSX, CSS3, React
+    JSX, CSS3, React, Redux
 - Tools: 
-    Git, GitHub, Linters
+    Git, GitHub, Linters, npm, VSCode, ESlint, Stylelint, React, Redux, React-Redux, React-Router, React-Create-App, React-DOM, React-Redux, React-Router-DOM, Redux-Logger, Redux-Thunk, Webpack, Babel, Node, NPM, Yarn, Heroku, Netlify, GitHub Actions, ESLint, Stylelint, Jest, React Testing Library, Redux Mock Store, and React-Redux-Firebase.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -40,6 +40,8 @@
 ### Key Features <a name="key-features"></a>
 - Dynamic webpage
 - Built with react components
+- Responsive design
+- User can book rockets and join missions
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

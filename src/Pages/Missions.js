@@ -1,5 +1,3 @@
-/* eslint-disable */
-/* stylelint-disable */
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchMissions } from '../Redux/Missions/missionsSlice';
@@ -7,11 +5,12 @@ import MissionList from '../Components/MissionLists';
 
 const Missions = () => {
   const { missions, isLoading, error } = useSelector((store) => store.missions);
-  console.log('missions data', missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (missions.length === 0) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, missions.length]);
   return (
     <>
       {isLoading && <h2>Loadding...</h2>}
@@ -36,4 +35,3 @@ const Missions = () => {
 };
 
 export default Missions;
-

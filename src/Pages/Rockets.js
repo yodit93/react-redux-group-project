@@ -1,5 +1,3 @@
-/* eslint-disable */
-/* stylelint-disable */
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import RocketList from '../Components/RocketLists';
@@ -9,8 +7,10 @@ const Rockets = () => {
   const { rockets } = useSelector((store) => store.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
+    if (rockets.length === 0) {
+      dispatch(fetchRockets());
+    }
+  }, [dispatch, rockets.length]);
   return (
     <ul className="rockets">
       {rockets.map((rocket) => (
