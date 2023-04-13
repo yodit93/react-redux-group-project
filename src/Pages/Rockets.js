@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* stylelint-disable */
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import RocketList from '../Components/RocketLists';

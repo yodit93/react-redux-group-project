@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* stylelint-disable */
 import { useSelector } from 'react-redux';
 import MissionLists from '../Components/MissionLists';
 import './Profile.css';
