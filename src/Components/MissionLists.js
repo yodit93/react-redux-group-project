@@ -12,15 +12,15 @@ const MissionList = ({ mission }) => {
   };
   return (
     <tr className="row">
-      <td>{mission.name}</td>
-      <td>{mission.description}</td>
+      <td className="miss-name">{mission.name}</td>
+      <td className="miss-descri">{mission.description}</td>
       <td>
-        {mission.joined && <button type="button" className="reserve">Active Member</button>}
-        {!mission.joined && <button type="button" className="reserve">Not a member</button>}
+        {mission.joined && <button type="button" className="memb active">Active Member</button>}
+        {!mission.joined && <button type="button" className="memb">Not a member</button>}
       </td>
       <td>
-        {mission.joined && <button type="button" className="reserve" onClick={() => handleLeave(mission.id)}>Leave Mission</button>}
-        {!mission.joined && <button type="button" className="reserve" onClick={() => handleJoin(mission.id)}>Join Mission</button>}
+        {mission.joined && <button type="button" className="btn leave" onClick={() => handleLeave(mission.id)}>Leave Mission</button>}
+        {!mission.joined && <button type="button" className="btn" onClick={() => handleJoin(mission.id)}>Join Mission</button>}
       </td>
     </tr>
   );
