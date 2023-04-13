@@ -26,6 +26,8 @@ exports[`should render the Navbar component 1`] = `
         className="list-item"
       >
         <a
+          aria-current="page"
+          className="active"
           href="/"
           onClick={[Function]}
         >
@@ -36,6 +38,7 @@ exports[`should render the Navbar component 1`] = `
         className="list-item"
       >
         <a
+          className=""
           href="/missions"
           onClick={[Function]}
         >
@@ -46,6 +49,7 @@ exports[`should render the Navbar component 1`] = `
         className="list-item"
       >
         <a
+          className=""
           href="/profile"
           onClick={[Function]}
         >

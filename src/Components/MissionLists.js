@@ -15,7 +15,7 @@ const MissionList = ({ mission }) => {
       <td className="miss-name">{mission.name}</td>
       <td className="miss-descri">{mission.description}</td>
       <td>
-        {mission.joined && <button type="button" className="memb active">Active Member</button>}
+        {mission.joined && <button type="button" className="memb active-memb">Active Member</button>}
         {!mission.joined && <button type="button" className="memb">Not a member</button>}
       </td>
       <td>

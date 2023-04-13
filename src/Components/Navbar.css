@@ -58,8 +58,8 @@ a:hover {
   color: red;
 }
 
-a:active {
-  color: red;
+.active {
+  text-decoration: underline;
 }
 
 .link-mission {
