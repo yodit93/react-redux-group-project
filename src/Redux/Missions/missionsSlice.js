@@ -1,38 +1,45 @@
 /* eslint-disable */
 /* stylelint-disable */
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import { fetchMissions } from '../Redux/Missions/missionsSlice';
-import MissionList from '../Components/MissionLists';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const Missions = () => {
-  const { missions, isLoading, error } = useSelector((store) => store.missions);
-  console.log('missions data', missions);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
-  return (
-    <>
-      {isLoading && <h2>Loadding...</h2>}
-      {error && <h2>{error}</h2>}
-      <table className="missions">
-        <thead>
-          <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>Join</th>
-          </tr>
-        </thead>
-        <tbody>
-          {missions.map((mission) => (
-            <MissionList key={mission.id} mission={mission} />
-          ))}
-        </tbody>
-      </table>
-    </>
-  );
+const initialState = {
+  missions: [],
+  isLoading: false,
+  error: null,
 };
+const url = 'https://api.spacexdata.com/v3/missions';
+export const fetchMissions = createAsyncThunk('missions/fetchMissions', async (_, { rejectWithValue }) => {
+  try {
+    const response = await axios(url);
+    console.log('data', response.data);
+    return response.data;
+  } catch (err) {
+    return rejectWithValue('Unable to fetch data');
+  }
+});
+const missionsSlice = createSlice({
+  name: 'missions',
+  initialState,
+  reducers: {
+    joinMission: (state, action) => {
+      const newMissions = state.missions.map((mission) => {
+        if (action.payload !== mission.id) {
+          return mission;
+        }
+        return {
+          ...mission,
+          joined: true,
+        };
+      });
+      return {
+        ...state,
+        missions: newMissions,
+      };
+    },
+    
+  }
+});
 
-export default Missions;
+export const { joinMission, leaveMission } = missionsSlice.actions;
+export default missionsSlice.reducer;
