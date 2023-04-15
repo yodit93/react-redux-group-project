@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  padding: 0 4%;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mission-lists,
+.my-rockets {
+  margin-bottom: 0.5rem;
+}
+
+.rocket-list,
+.mission-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.rocket-item,
+.mission-item {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 3.5rem;
+  border-radius: 0.2rem;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.rocket-name,
+.mission-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
