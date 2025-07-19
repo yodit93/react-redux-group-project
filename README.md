@@ -52,7 +52,7 @@
 
 > Link to deployed project.
 
-- [Live Demo Link](https://space-travellers-app.onrender.com)
+- [Live Demo Link](https://react-redux-group-project-beta.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
